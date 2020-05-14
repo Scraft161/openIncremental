@@ -1,0 +1,37 @@
+// this is the game file for Scraft's openIncremental game, the idea is to have a game everyone can modify and change with the right knowledge
+// it is also an excuse for me to not do any schoolwork
+// if you'd like to contribute you can find the manual here: http://orteil.dashnet.org/igm/help.html
+// just a few rules for as contributers
+// 1. try to avoid spagetti-code - it is a bad example for those who are new to programming
+// 2. try to respect other's decicions - you can change them but try to respect what they did, you wouldn't like someone removing that feature you worked the whole of last night on
+// these rules are set in place to keep this project clean and respectfull, I'm not forcing these rules on you but they are here as guidelines to follow.
+
+// this is the area to specify the games author and other info
+let's make a game!
+  name:openIncremental
+  by:Scraft161 and the contributers
+  desc:open source incremental game
+  created:14/5/2020
+  updated:not yet
+  version: 0.1
+
+Settings
+	//background:stuff/meadow.jpg
+	building cost increase:115%
+	building cost refund:50%
+	//spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	//stylesheet:stuff/bigBlue.css
+
+Buttons
+	*dirtblock
+		name:Mine a block of dirt
+		desc:Click this do mine a block of dirt
+		on click:anim icon wobble
+		on click:yield 1 dirt
+		//on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		//icon:stuff/bunny.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
